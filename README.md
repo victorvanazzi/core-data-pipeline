@@ -16,6 +16,10 @@ Este repositório faz parte de um ecossistema com três projetos modulares:
 | [`sales-performance-bi`](https://github.com/victorvanazzi/sales-performance-bi) | Visualização | Análise de desempenho comercial no Power BI |
 | [`sales-demand-forecasting`](https://github.com/victorvanazzi/sales-demand-forecasting) | Modelagem Preditiva | Previsão de vendas mensais com séries temporais |
 
+## Objetivo do Projeto
+
+O objetivo principal deste projeto é estabelecer um ecossistema robusto de dados para uma varejista global de eletrônicos, através da ingestão e transformação de dados brutos em uma arquitetura Medallion no Databricks. O pipeline unifica, padroniza e enriquece os dados, gerando camadas prontas para consumo em análises de desempenho comercial e modelos de previsão de vendas.
+
 ## Estrutura do Repositório
 
 ```
@@ -29,10 +33,6 @@ core-data-pipeline/
 │
 └── README.md                         # Documentação do projeto
 ```
-
-## Objetivo do Projeto
-
-O objetivo principal deste projeto é estabelecer um ecossistema robusto de dados para uma varejista global de eletrônicos, através da ingestão e transformação de dados brutos em uma arquitetura Medallion no Databricks. O pipeline unifica, padroniza e enriquece os dados, gerando camadas prontas para consumo em análises de desempenho comercial e modelos de previsão de vendas.
 
 ## Estrutura do Pipeline (Arquitetura Medallion)
 
