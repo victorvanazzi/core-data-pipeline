@@ -12,6 +12,20 @@ Este repositório faz parte de um ecossistema com três projetos modulares:
 | [`sales-performance-bi`](https://github.com/victorvanazzi/sales-performance-bi) | Visualização | Análise de desempenho comercial no Power BI |
 | [`sales-demand-forecasting`](https://github.com/victorvanazzi/sales-demand-forecasting) | Modelagem Preditiva | Previsão de vendas mensais com séries temporais |
 
+## Estrutura do Repositório
+
+```
+core-data-pipeline/
+│
+├── notebooks/
+│   ├── 00_bronze_ingestao.ipynb        # Ingestão de dados brutos para camada Bronze
+│   ├── 01_silver_transformacoes.ipynb    # Transformações e integração de dados para camada Silver
+│   ├── 02a_gold_agregacoes_mensais.ipynb   # Agregações temporais mensais para séries de vendas
+│   ├── 02b_gold_modelo_dimensional.ipynb   # Modelagem dimensional para análises no Power BI
+│
+└── README.md                         # Documentação do projeto
+```
+
 ## Objetivo do Projeto
 
 O objetivo principal deste projeto é estabelecer um ecossistema robusto de dados para uma varejista global de eletrônicos, através da ingestão e transformação de dados brutos em uma arquitetura Medallion no Databricks. O pipeline unifica, padroniza e enriquece os dados, gerando camadas prontas para consumo em análises de desempenho comercial e modelos de previsão de vendas.
@@ -48,20 +62,6 @@ Construção de dados agregados e modelos dimensionais otimizados para casos de 
       * Construção de um modelo dimensional em esquema estrela.
       * Criação das dimensões (`dim_date`, `dim_product`, `dim_store`, `dim_customer`) e da tabela fato (`fact_sales`).
       * **Output:** Tabelas Delta (`dim_date`, `dim_product`, `dim_store`, `dim_customer`, `fact_sales`) prontas para consumo em ferramentas de Business Intelligence como o Power BI.
-
-## Estrutura do Repositório
-
-```
-core-data-pipeline/
-│
-├── notebooks/
-│   ├── 00_bronze_ingestao.txt        # Ingestão de dados brutos para camada Bronze
-│   ├── 01_silver_transformacoes.txt  # Transformações e integração de dados para camada Silver
-│   ├── 02_gold_agregacoes_mensais.txt # Agregações temporais mensais para séries de vendas
-│   ├── 02b_gold_modelo_dimensional.txt # Modelagem dimensional para análises no Power BI
-│
-└── README.md                         # Documentação do projeto
-```
 
 ## Tecnologias e Ferramentas
 
