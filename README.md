@@ -1,3 +1,7 @@
+![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)
+![Databricks](https://img.shields.io/badge/Databricks-PySpark-orange.svg)
+![Status](https://img.shields.io/badge/Status-Completo-brightgreen.svg)
+
 # Pipeline de Dados para Varejista Global de Eletrônicos
 
 > Repositório responsável pela ingestão, transformação e estruturação de dados brutos em um modelo Medallion (Bronze → Silver → Gold) no Databricks, servindo como base para análises de BI e modelagem preditiva.
